@@ -34,7 +34,7 @@ function makeSound(src, enabled) {
 
 export default function App() {
   const [campaign, setCampaign] = useState(createCampaign);
-  const [stageIndex, setStageIndex] = useState(7);
+  const [stageIndex, setStageIndex] = useState(0);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [health, setHealth] = useState(3);
   const [score, setScore] = useState(0); // Số câu trả lời đúng; điểm = score * 100.
