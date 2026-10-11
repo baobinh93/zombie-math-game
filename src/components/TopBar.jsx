@@ -1,0 +1,3 @@
+import React from 'react';
+import ImageIcon from './ImageIcon.jsx';
+export default function TopBar() { return <header className="topbar"><div className="brand"><div className="brand-icon"><ImageIcon name="target" size={23}/></div><div><div className="brand-name">ZOMBIE <span>MATH</span></div><div className="brand-sub">HỌC TOÁN • SINH TỒN</div></div></div><div className="campaign-tag">10 MÀN • 200 CÂU HỎI</div></header>; }

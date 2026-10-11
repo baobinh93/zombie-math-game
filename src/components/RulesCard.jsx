@@ -1,0 +1,3 @@
+import React from 'react';
+import ImageIcon from './ImageIcon.jsx';
+export default function RulesCard() { return <div className="rules-card"><div className="rules-heading"><ImageIcon name="shield" size={17}/> QUY TẮC SINH TỒN</div><div className="rule"><span className="rule-check good">✓</span><span><b>Trả lời đúng</b><small>Bắn zombie, +100 điểm và qua câu</small></span></div><div className="rule"><span className="rule-check bad">×</span><span><b>Trả lời sai</b><small>Không qua câu, thử lại câu hiện tại</small></span></div><div className="rule"><span className="rule-check danger">!</span><span><b>Hết giờ / zombie áp sát</b><small>Mất 1 mạng sống</small></span></div></div>; }
