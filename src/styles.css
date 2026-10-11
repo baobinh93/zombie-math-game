@@ -1288,3 +1288,61 @@ button {
 .timer-track div {
   transition: width 0.05s linear !important;
 }
+
+/* Mobile: đặt bảng trả lời sát ngay dưới sân đấu */
+@media (max-width: 800px) {
+  .game-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 12px;
+  }
+
+  /* Cho các thành phần con tham gia sắp xếp theo thứ tự mobile */
+  .battle-column,
+  .side-column {
+    display: contents;
+  }
+
+  .mission-row {
+    order: 0;
+    margin-bottom: 0;
+  }
+
+  .battlefield {
+    order: 1;
+    margin-bottom: 0;
+  }
+
+  .question-panel {
+    order: 2;
+    margin-top: 0;
+    padding: 15px;
+  }
+
+  .stat-cards {
+    order: 3;
+    margin-top: 0;
+  }
+
+  .battle-footer {
+    order: 4;
+    padding-top: 4px;
+    gap: 10px;
+  }
+
+  .rules-card {
+    order: 5;
+  }
+}
+
+/* Điện thoại nhỏ: giảm khoảng cách giữa sân đấu và câu hỏi */
+@media (max-width: 480px) {
+  .game-layout {
+    gap: 10px;
+  }
+
+  .question-panel {
+    padding: 12px;
+  }
+}
